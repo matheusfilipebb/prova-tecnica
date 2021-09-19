@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Controle de Locais de Trabalho</title>
+  </head>
+  <body>
+    <header class="px-4 py-4 text-white fst-italic">
+      <h1 class="my-0 fs-4 fw-light">Controle de Locais de Trabalho</h1>
+      <div class="d-flex gap-3">
+        <p class="fs-3">
+          <a href="/" class="text-white"><i class="bi-house-door"></i></a> |
+          <a href="/" class="text-white"><i class="bi-person"></i></a>
+        </p>
+        <div>
+          <p class="fs-6">Usuário</p>
+          <p>Administrador</p>
+        </div>
+      </div>
+    </header>
+    <section>
+      <aside class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" id="sidebar">
+        <a
+          href="/"
+          class="d-flex align-items-center text-white text-decoration-none"
+        >
+          <span class="fs-6"><i class="bi-gear-fill"></i> Adiministração</span>
+        </a>
+        <hr />
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white"> Administradores </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white"> Áreas </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link active" aria-current="page"> Locais de Trabalho </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white"> Habilidades </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white"> Log </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white"> Responsáveis </a>
+          </li>
+        </ul>
+      </aside>
+      <main>
+        <div class="container px-5 py-4">
+          <h4 class="fs-5">Locais de Trabalho</h4>
+          <hr />
+          <div class="content bg-white border shadow-sm p-3">
+            <form class="row g-3">
+              <div class="col-4">
+                <label for="predio-input" class="form-label">Prédio</label>
+                <select id="predio-input" class="form-select" aria-label="predio">
+                  <option value="" selected>Selecione um prédio</option>
+                  <option value="1">Prédio 1</option>
+                  <option value="2">Prédio 2</option>
+                  <option value="3">Prédio 3</option>
+                  <option value="4">Prédio 4</option>
+                  <option value="5">Prédio 5</option>
+                </select>
+              </div>
+              <div class="col-4">
+                <label for="local-input" class="form-label">Local de Trabalho</label>
+                <input type="text" id="local-input" class="form-control" />
+              </div>
+              <div class="col-1 my-5">
+                <button class="btn border shadow-sm" type="submit">
+                  <i class="bi-plus-lg"></i>
+                </button>
+              </div>
+            </form>
+            <div class="locais-container">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Prédio</th>
+                    <th>Local de Trabalho</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody class="locais-list"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
