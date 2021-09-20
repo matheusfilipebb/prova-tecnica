@@ -1,3 +1,3 @@
 ## Resultado:
 
-![Layout](https://github.com/matheusfilipebb/prova-tecnica/blob/master/layout.png?raw=true)
+![Layout](https://raw.githubusercontent.com/matheusfilipebb/prova-tecnica/master/layout.PNG)
