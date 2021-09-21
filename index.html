@@ -63,13 +63,13 @@
       </aside>
       <main>
         <div class="px-5 py-4">
-          <h4 class="fs-5">Locais de Trabalho</h4>
+          <h4 class="fs-5">Locais de Trabalho</h4>          
           <hr />
           <div class="content bg-white border shadow-sm p-4">
             <form class="row g-3 mb-2">
               <div class="col-3">
-                <label for="predio-input" class="form-label">Prédio</label>
-                <select id="predio-input" class="form-select" aria-label="predio">
+                <label for="predio-select" class="form-label">Prédio</label>
+                <select id="predio-select" class="form-select" aria-label="predio">
                   <option value="" selected>Selecione um prédio</option>
                   <option value="1">Prédio 1</option>
                   <option value="2">Prédio 2</option>
@@ -77,10 +77,16 @@
                   <option value="4">Prédio 4</option>
                   <option value="5">Prédio 5</option>
                 </select>
+                <div class="invalid-feedback">
+                  Por favor, escolha um prédio
+                </div>
               </div>
               <div class="col-3">
                 <label for="local-input" class="form-label">Local de Trabalho</label>
                 <input type="text" id="local-input" class="form-control" />
+                <div class="invalid-feedback">
+                  Por favor, insira um local
+                </div>
               </div>
               <div class="col-1 mt-5">
                 <button class="btn border shadow-sm" type="submit">
@@ -98,7 +104,7 @@
                 </thead>
                 <tbody></tbody>
               </table>
-            </div>
+            </div>                        
           </div>
         </div>
       </main>

@@ -60,8 +60,10 @@ function addItem(evt) {
   //impedir submição
   evt.preventDefault()
   // "validação" do formulário
-  if (!predioSelect.value || !localInput.value) {
-    alert("Por favor, preencha todos os campos")
+  if (!predioSelect.value) {
+    predioSelect.classList.add('is-invalid')
+  } else if (!localInput.value) {
+    localInput.classList.add('is-invalid')
   } else {
     //armazena a LISTA em 'arrLocaisTrabalho'
     const strLocaisTrabalho = sessionStorage.getItem("arrLocaisTrabalho")
@@ -77,6 +79,9 @@ function addItem(evt) {
     //limpa SELECT & INPUT value
     predioSelect.value = ""
     localInput.value = ""
+    //limpa o feedback de invalidez
+    predioSelect.classList.remove('is-invalid')
+    localInput.classList.remove('is-invalid')
   }
 }
 
