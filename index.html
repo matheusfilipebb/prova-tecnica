@@ -31,16 +31,16 @@
         </div>
       </div>
     </header>
-    <section>
-      <aside class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" id="sidebar">
+    <section class="d-flex">
+      <aside class="d-flex flex-column flex-shrink-0 p-3 text-white">
         <a
           href="/"
-          class="d-flex align-items-center text-white text-decoration-none"
+          class="d-flex text-white text-decoration-none"
         >
           <span class="fs-6"><i class="bi-gear-fill"></i> Adiministração</span>
         </a>
         <hr />
-        <ul class="nav nav-pills flex-column">
+        <ul class="nav nav-tabs flex-column border-0">
           <li class="nav-item">
             <a href="#" class="nav-link text-white"> Administradores </a>
           </li>
@@ -62,12 +62,12 @@
         </ul>
       </aside>
       <main>
-        <div class="container px-5 py-4">
+        <div class="px-5 py-4">
           <h4 class="fs-5">Locais de Trabalho</h4>
           <hr />
-          <div class="content bg-white border shadow-sm p-3">
-            <form class="row g-3">
-              <div class="col-4">
+          <div class="content bg-white border shadow-sm p-4">
+            <form class="row g-3 mb-2">
+              <div class="col-3">
                 <label for="predio-input" class="form-label">Prédio</label>
                 <select id="predio-input" class="form-select" aria-label="predio">
                   <option value="" selected>Selecione um prédio</option>
@@ -78,26 +78,25 @@
                   <option value="5">Prédio 5</option>
                 </select>
               </div>
-              <div class="col-4">
+              <div class="col-3">
                 <label for="local-input" class="form-label">Local de Trabalho</label>
                 <input type="text" id="local-input" class="form-control" />
               </div>
-              <div class="col-1 my-5">
+              <div class="col-1 mt-5">
                 <button class="btn border shadow-sm" type="submit">
                   <i class="bi-plus-lg"></i>
                 </button>
               </div>
             </form>
-            <div class="locais-container">
-              <table class="table">
+            <div class="col-7">
+              <table class="table table-sm table-bordered text-center">
                 <thead>
-                  <tr>
-                    <th>Prédio</th>
-                    <th>Local de Trabalho</th>
-                    <th></th>
+                    <th class="col-3">Prédio</th>
+                    <th class="col-3">Local de Trabalho</th>
+                    <th class="col-1"></th>
                   </tr>
                 </thead>
-                <tbody class="locais-list"></tbody>
+                <tbody></tbody>
               </table>
             </div>
           </div>
